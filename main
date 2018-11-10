@@ -30,12 +30,12 @@ void prompt(char text[], int max)
 
 int main()
 {
-		// Get user's letter THIS FIRST DOESN'T
+  // Get user's letter
 	char letter;
 	cout << "Enter a letter: ";
 	cin >> letter;
   
-  // get the user's text THIS FIRST WORKS
+  // get the user's text using void prompt (or getting it from here would work also)
 	char text[256];
 	prompt(text, sizeof(text) / sizeof(text[0]));
 
